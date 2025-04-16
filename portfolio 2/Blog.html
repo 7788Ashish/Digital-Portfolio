@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #3a3a55);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item p {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #ffddcc;
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Blogs
+    </header>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://www.shutterstock.com/shutterstock/photos/2284126663/display_1500/stock-photo-data-science-and-big-data-technology-scientist-computing-analysing-and-visualizing-complex-data-2284126663.jpg" alt="AI Image">
+            <p>Artificial Intelligence Revolution The AI Revolution refers to the rapid advancements in artificial intelligence that are reshaping industries, economies, and daily life. This transformation is driven by breakthroughs in machine learning, deep learning, and neural networks, enabling machines to perform tasks previously thought to require human intelligence.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.britannica.com/47/246247-050-F1021DE9/AI-text-to-image-photo-robot-with-computer.jpg" alt="Robotics Image">
+            <p>Future of Robotics & Automation The future of robotics and automation is set to revolutionize multiple industries, enhance productivity, and reshape human interaction with technology. Advancements in artificial intelligence (AI), machine learning, and IoT (Internet of Things) are driving robots toward greater autonomy, intelligence, and efficiency.</p>
+        </div>
+        <!-- <div class="gallery-item">
+            <img src="https://www.digitalpiloto.com/blog/wp-content/uploads/2022/04/how-do-digital-marketing-and-cyber-security-companies-are-aligned-together.jpg" alt="Cybersecurity Image">
+            <p>Cybersecurity & Digital Safety In an era dominated by digital transformation, cybersecurity and digital safety have become essential to protect individuals, businesses, and governments from cyber threats. With increasing cyberattacks, data breaches, and privacy concerns, robust security measures are crucial for maintaining trust and safety in the digital space.</p>
+        </div> -->
+        <div class="gallery-item">
+            <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2021/03/Software-Development-Business1--1-.jpg" alt="Coding Image">
+            <p>Innovative Software Development Software development is constantly evolving with new methodologies, frameworks, and technologies shaping the future. Innovative software development focuses on efficiency, scalability, security, and user experience by leveraging AI, cloud computing, DevOps, and agile practices.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRUvyvEy0IEGppcl5NF0A6Lk6g1RE1RcHTYA&s" alt="Blockchain Image">
+            <p>Blockchain & Decentralized Systems Blockchain and decentralized systems are transforming industries by enabling secure, transparent, and tamper-proof digital transactions without the need for intermediaries. These technologies power cryptocurrencies, smart contracts, decentralized applications (dApps), and more.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://icsblog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2023/07/28222750/ImageForArticle_763_16466591728756796.jpg" alt="VR Image">
+            <p>Virtual Reality & Augmented Experiences Virtual Reality (VR) and Augmented Reality (AR) are revolutionizing digital experiences by blending the real and virtual worlds. These technologies enhance entertainment, education, healthcare, business, and beyond.</p>
+        </div>
+    </div>
+</body>
+</html>

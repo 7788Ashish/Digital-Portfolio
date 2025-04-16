@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #3a3a55);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+        }
+
+     
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .project {
+            perspective: 1000px;
+            margin: 20px;
+        }
+
+        .project-card {
+            width: 320px;
+            height: 250px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transform: rotateY(0deg);
+            transition: transform 0.5s, background 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .project-card:hover {
+            transform: rotateY(10deg) scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .project-card h2 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            text-align: justify;
+            line-height: 1.4;
+            max-height: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .project-card a {
+            display: block;
+            text-align: center;
+            padding: 10px 15px;
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        .project-card a:hover {
+            background: #ff3b2f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </header>
+    <main>
+        <section class="project">
+            <div class="project-card">
+                <h2>Real-Time Task Manager</h2>
+                <p>Developed a Task Management app using Angular, Node.js, and Express.js with advanced API functionalities.</p>
+                <a href="https://github.com/7788Ashish/Task-Manager">View Project</a>
+            </div>
+        </section>
+        <section class="project">
+            <div class="project-card">
+                <h2>Real-Time Chat App</h2>
+                <p>Created a full-stack chat app with React, Redis, and authentication using Kinde.</p>
+                <a href="#">View Project</a>
+            </div>
+        </section>
+        <section class="project">
+            <div class="project-card">
+                <h2>Foodie App UI/UX</h2>
+                <p>Designed high-fidelity wireframes and prototypes for a food ordering app using Figma.</p>
+                <a href="https://www.behance.net/gallery/178146853/Foodie-App-UI-Design">View Project</a>
+            </div>
+        </section>
+    </main>
+
+   
+</body>
+</html>

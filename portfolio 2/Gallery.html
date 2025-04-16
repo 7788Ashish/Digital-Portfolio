@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #3a3a55);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .blog-post {
+            perspective: 1000px;
+            margin: 20px;
+        }
+
+        .blog-card {
+            width: 300px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transform: rotateY(0deg);
+            transition: transform 0.5s;
+        }
+
+        .blog-card:hover {
+            transform: rotateY(15deg) scale(1.05);
+        }
+
+        .blog-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .blog-card h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #ff758c;
+        }
+
+        .blog-card p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .blog-card a {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #ff758c;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .blog-card a:hover {
+            background: #e44d69;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Gallery
+    </header>
+    <main>
+        <section class="blog-post">
+            <div class="blog-card">
+                <img src="https://eduindex.org/wp-content/uploads/2021/07/1913623.jpg?w=1024" alt=" Image">
+                <h2>Exploring the Beauty of Nature</h2>
+                <p>Nature is full of wonders and breathtaking landscapes. In this post, we take a journey through some of the most beautiful places on Earth...</p>
+                <a href="#">Read More</a>
+            </div>
+        </section>
+        <section class="blog-post">
+            <div class="blog-card">
+                <img src="https://imageio.forbes.com/specials-images/imageserve/66bee357cf48b97789cbc270/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds">
+                <h2>The Future of Artificial Intelligence</h2>
+                <p>AI is transforming the world at an unprecedented pace. From automation to deep learning, let's dive into the latest AI trends...</p>
+                <a href="#">Read More</a>
+            </div>
+        </section>
+        <section class="blog-post">
+            <div class="blog-card">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*XARnBscUNWuRW8ZXGCc8wA.jpeg" alt="Image">
+                <h2>Top 10 Travel Destinations</h2>
+                <p>Looking for your next adventure? Here are the top 10 places you should visit for an unforgettable experience...</p>
+                <a href="#">Read More</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

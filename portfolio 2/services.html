@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #3a3a55);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .service {
+            perspective: 1000px;
+            margin: 20px;
+        }
+
+        .service-card {
+            width: 300px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transform: rotateY(0deg);
+            transition: transform 0.5s;
+        }
+
+        .service-card:hover {
+            transform: rotateY(15deg) scale(1.05);
+        }
+
+        .service-card h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .service-card a {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .service-card a:hover {
+            background: #ff3b2f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Our Services
+    </header>
+    <main>
+        <section class="service">
+            <div class="service-card">
+                <h2>Web Development</h2>
+                <p>We build modern, responsive, and high-performing websites.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </section>
+        <section class="service">
+            <div class="service-card">
+                <h2>Mobile App Development</h2>
+                <p>Create seamless mobile applications for iOS and Android.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </section>
+        <section class="service">
+            <div class="service-card">
+                <h2>SEO Optimization</h2>
+                <p>Boost your online presence with expert SEO strategies.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

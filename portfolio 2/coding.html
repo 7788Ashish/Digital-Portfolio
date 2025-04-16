@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Track</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #3a3a55);
+            color: white;
+            text-align: center;
+            transition: background 0.3s;
+        }
+
+        header {
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .coding-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .platform {
+            width: 300px;
+            padding: 20px;
+            margin: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .platform:hover {
+            transform: scale(1.05);
+        }
+
+        .platform img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .platform h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .platform a {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .platform a:hover {
+            background: #ff3b2f;
+        }
+
+        .stats {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stats h2 {
+            margin-bottom: 15px;
+        }
+
+        .chart-container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>Coding Track</header>
+    <section class="coding-container">
+        <div class="platform">
+            <img src="leetcode-logo.png" alt="LeetCode">
+            <h2>LeetCode</h2>
+            <a href="https://leetcode.com/u/ashishrouniyar2/" target="_blank">View Profile</a>
+        </div>
+        <div class="platform">
+            <img src="gfg-logo.png" alt="GeeksForGeeks">
+            <h2>GeeksForGeeks</h2>
+            <a href="https://www.geeksforgeeks.org/user/ashishrouniyar2/" target="_blank">View Profile</a>
+        </div>
+        <div class="platform">
+            <img src="codechef-logo.png" alt="CodeChef">
+            <h2>CodeChef</h2>
+            <a href="#" target="_blank">View Profile</a>
+        </div>
+        <div class="platform">
+            <img src="codeforces-logo.png" alt="CodeForces">
+            <h2>CodeForces</h2>
+            <a href="#" target="_blank">View Profile</a>
+        </div>
+    </section>
+    <section class="stats">
+        <h2>Leaderboard Stats</h2>
+        <canvas id="leaderboardChart"></canvas>
+    </section>
+    <section class="stats">
+        <h2>Coding Streak Tracker</h2>
+        <img src="ai-avatar.png" alt="AI Avatar" class="avatar">
+        <p>🔥 45 Days Streak on LeetCode!</p>
+        <p>🔥 30 Days Streak on GFG!</p>
+    </section>
+
+    <script>
+        const ctx = document.getElementById('leaderboardChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['LeetCode', 'GFG', 'CodeChef', 'CodeForces'],
+                datasets: [{
+                    label: 'Problems Solved',
+                    data: [250, 180, 200, 150],
+                    backgroundColor: ['#FF6F61', '#4CAF50', '#FFA500', '#007BFF']
+                }]
+            }
+        });
+    </script>
+</body>
+</html>

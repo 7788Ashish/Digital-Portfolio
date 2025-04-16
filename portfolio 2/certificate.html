@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #3a3a55);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .certifications-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .certificate {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .certificate:hover {
+            transform: scale(1.05);
+        }
+
+        .certificate img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .certificate h2 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            color: #ffddcc;
+        }
+
+        .certificate p {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        .certificate a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .certificate a:hover {
+            background: #ff3b2f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        My Certifications
+    </header>
+    <div class="certifications-container">
+        <div class="certificate">
+            <img src="https://kinsta.com/wp-content/uploads/2023/04/react-must-be-in-scope-when-using-jsx.jpg" alt="Certification Image">
+            <h2>React Basic</h2>
+            <p>Issued by Coursera - May 14, 2024</p>
+            <a href="https://www.coursera.org/account/accomplishments/verify/LG7QYKFP8WT8">View Certificate</a>
+        </div>
+        <div class="certificate">
+            <img src="https://cacm.acm.org/wp-content/uploads/2025/01/012225.BLOG_.21st-Century-C-G.jpg" alt="Certification Image">
+            <h2>C++ Certificate</h2>
+            <p>Issued by Saylor Academy - NOV 17 2023</p>
+            <a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=1873093555AR">View Certificate</a>
+        </div>
+        <div class="certificate">
+            <img src="https://f.hubspotusercontent40.net/hubfs/2488049/Machine%20Learning%20Cover%20Image.jpg" alt="Certification Image">
+            <h2>Machine Learning Basics</h2>
+            <p>Issued by DEF University - Jan 2024</p>
+            <a href="#">View Certificate</a>
+        </div>
+    </div>
+</body>
+</html>
